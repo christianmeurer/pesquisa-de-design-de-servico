@@ -42,6 +42,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   reveals.forEach(el => observer.observe(el));
 
+  // ── Copy to clipboard (share cards) ──
+  window.copyText = (el) => {
+    const text = el.getAttribute('data-copy');
+    if (!text) return;
+    navigator.clipboard.writeText(text).then(() => {
+      const original = el.querySelector('p').textContent;
+      el.querySelector('p').textContent = 'Copiado!';
+      setTimeout(() => { el.querySelector('p').textContent = original; }, 2000);
+    });
+  };
+
+  window.copyLink = () => {
+    navigator.clipboard.writeText('https://form.typeform.com/to/qH5MLd8m').then(() => {
+      const card = document.querySelector('[onclick="copyLink()"] p');
+      const original = card.textContent;
+      card.textContent = 'Link copiado!';
+      setTimeout(() => { card.textContent = original; }, 2000);
+    });
+  };
+
   // ── Smooth scroll for anchor links ──
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
