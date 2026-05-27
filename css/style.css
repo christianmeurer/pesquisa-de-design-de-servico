@@ -500,6 +500,12 @@ p.lead {
   color: var(--emerald-800);
 }
 
+.avatar-photo {
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--emerald-200);
+}
+
 .team-lead-info h4 {
   font-family: var(--font-body);
   font-weight: 600;
@@ -521,6 +527,12 @@ p.lead {
 }
 .team-lead-info a:hover {
   color: var(--emerald-800);
+}
+
+.team-members {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
 }
 
 /* ── Equipe voluntária ───────────────────────────── */
