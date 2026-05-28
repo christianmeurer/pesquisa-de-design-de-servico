@@ -191,9 +191,19 @@ p.lead {
 }
 
 .navbar-brand {
-  font-family: var(--font-display);
-  font-size: 18px;
-  color: var(--emerald-900);
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-logo-icon {
+  display: none;
+  height: 36px;
+  width: 36px;
 }
 
 .navbar-links {
@@ -887,6 +897,12 @@ p.lead {
 
 /* ── Responsive ──────────────────────────────────── */
 @media (max-width: 768px) {
+  .navbar-logo {
+    display: none;
+  }
+  .navbar-logo-icon {
+    display: block;
+  }
   .navbar-links {
     display: none;
   }
