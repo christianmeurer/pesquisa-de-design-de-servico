@@ -989,6 +989,18 @@ p.lead {
   color: var(--sand-400);
 }
 
+/* ── Banner de marca ─────────────────────────────── */
+.brand-banner {
+  background: var(--cream);
+  padding: 0;
+}
+.brand-banner img {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: block;
+}
+
 /* ── Footer ──────────────────────────────────────── */
 .footer {
   background: var(--emerald-950);
