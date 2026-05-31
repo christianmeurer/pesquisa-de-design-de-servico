@@ -62,6 +62,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  // ── Volunteer form ──
+  // Sem backend: compõe um e-mail para contato@ (já roteado para o Gmail via Cloudflare).
+  // Para trocar por um serviço (Formspree / Web3Forms), aponte o action do form para o
+  // endpoint e remova este handler.
+  const volunteerForm = document.querySelector('#volunteer-form');
+  if (volunteerForm) {
+    volunteerForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(volunteerForm);
+      const nome = (data.get('nome') || '').trim();
+      const email = (data.get('email') || '').trim();
+      const linkedin = (data.get('linkedin') || '').trim();
+      const ajuda = (data.get('ajuda') || '').trim();
+      const motivo = (data.get('motivo') || '').trim();
+
+      const subject = `Novo voluntário: ${nome}`;
+      const body = [
+        `Nome: ${nome}`,
+        `Email: ${email}`,
+        `LinkedIn: ${linkedin || '—'}`,
+        '',
+        'O que posso fazer para ajudar?',
+        ajuda,
+        '',
+        'Por que quer ser um voluntário?',
+        motivo,
+      ].join('\n');
+
+      window.location.href =
+        `mailto:contato@pesquisadesigndeservico.com.br?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      const btn = volunteerForm.querySelector('button[type="submit"]');
+      if (btn) {
+        const original = btn.innerHTML;
+        btn.textContent = 'Abrindo seu e-mail…';
+        setTimeout(() => { btn.innerHTML = original; }, 4000);
+      }
+    });
+  }
+
   // ── Smooth scroll for anchor links ──
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {

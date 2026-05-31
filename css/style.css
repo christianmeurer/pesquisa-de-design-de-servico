@@ -618,6 +618,121 @@ p.lead {
   background: var(--emerald-200);
 }
 
+/* ── Card de voluntário (template) ───────────────── */
+.volunteer-card {
+  text-align: center;
+  padding: 22px 16px;
+  border-radius: 16px;
+  background: var(--emerald-50);
+  border: 1px solid var(--emerald-100);
+  transition: all 0.3s;
+}
+.volunteer-card:hover {
+  border-color: var(--emerald-300);
+  transform: translateY(-4px);
+}
+.volunteer-photo {
+  position: relative;
+  display: block;
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 14px;
+}
+.volunteer-photo img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 2px solid var(--emerald-200);
+}
+.volunteer-linkedin {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--emerald-600);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--white);
+  transition: background 0.2s, transform 0.2s;
+}
+.volunteer-photo:hover .volunteer-linkedin {
+  background: var(--emerald-700);
+  transform: scale(1.08);
+}
+.volunteer-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--emerald-900);
+}
+.volunteer-role {
+  font-size: 13px;
+  color: var(--emerald-600);
+  margin-top: 2px;
+}
+.volunteer-function {
+  font-size: 12px;
+  color: var(--sand-400);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+/* ── Formulário "Seja um voluntário" ─────────────── */
+.volunteer-form-wrap {
+  max-width: 620px;
+  margin: 36px auto 0;
+}
+.volunteer-form {
+  display: grid;
+  gap: 18px;
+}
+.form-field {
+  display: grid;
+  gap: 6px;
+}
+.form-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--emerald-900);
+}
+.form-field input,
+.form-field textarea {
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--sand-700);
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--sand-300);
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--emerald-400);
+  box-shadow: 0 0 0 3px var(--emerald-100);
+}
+.form-field textarea {
+  resize: vertical;
+  min-height: 96px;
+  line-height: 1.6;
+}
+.volunteer-form .btn {
+  justify-self: start;
+  margin-top: 4px;
+}
+.form-note {
+  font-size: 13px;
+  color: var(--sand-400);
+  margin-top: 14px;
+}
+
 /* ── Steps (Como participar) ─────────────────────── */
 .steps-grid {
   display: grid;
@@ -1055,6 +1170,12 @@ p.lead {
   .hero-cta-group .btn {
     justify-content: center;
     width: 100%;
+  }
+
+  .volunteer-form .btn {
+    justify-self: stretch;
+    width: 100%;
+    justify-content: center;
   }
 
   .label {
