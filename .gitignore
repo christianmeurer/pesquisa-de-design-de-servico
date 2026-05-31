@@ -4,6 +4,12 @@ Thumbs.db
 *.log
 docs/superpowers/
 
+# arquivos de trabalho (fontes brutas, não publicados)
+*.zip
+WhatsApp Image*.jpeg
+Mariana.jpeg
+textos.txt
+
 # wrangler files
 .wrangler
 .dev.vars*
