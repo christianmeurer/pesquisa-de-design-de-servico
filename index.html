@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pesquisa de Design de Serviço no Brasil 2026</title>
-  <meta name="description" content="Participe da pesquisa nacional que mapeia a atuação, maturidade e percepção de valor do Design de Serviço no Brasil.">
+  <meta name="description" content="Participe da pesquisa nacional que mapeia a atuação, maturidade e percepção de valor do Design de Serviço no Brasil. Aberta até 1º de julho de 2026.">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Pesquisa de Design de Serviço no Brasil 2026">
-  <meta property="og:description" content="Participe da pesquisa nacional que mapeia a atuação, maturidade e percepção de valor do Design de Serviço no Brasil.">
+  <meta property="og:description" content="Participe da pesquisa nacional que mapeia a atuação, maturidade e percepção de valor do Design de Serviço no Brasil. Aberta até 1º de julho.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pesquisadesigndeservico.com.br">
   <meta property="og:image" content="https://pesquisadesigndeservico.com.br/assets/images/brand/post-divulgacao.png">
@@ -19,27 +19,34 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ════ NAVBAR ════ -->
-  <nav class="navbar">
+  <!-- Paper texture overlays -->
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div class="paper-vignette" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ════ NAVBAR · ÍNDICE ════ -->
+  <nav class="navbar" aria-label="Índice da página">
     <div class="navbar-inner">
-      <a href="#" class="navbar-brand">
+      <a href="#" class="navbar-brand" aria-label="Pesquisa Nacional de Design de Serviço">
         <img src="assets/images/brand/logo-horizontal.png" alt="Pesquisa Nacional de Design de Serviço" class="navbar-logo">
-        <img src="assets/images/brand/icone.png" alt="Pesquisa Nacional de Design de Serviço" class="navbar-logo-icon">
+        <img src="assets/images/brand/icone.png" alt="" class="navbar-logo-icon">
       </a>
       <ul class="navbar-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#participe">Participe</a></li>
-        <li><a href="#divulgue">Divulgue</a></li>
-        <li><a href="#edicoes">Edições</a></li>
-        <li><a href="#apoiadores">Apoiadores</a></li>
+        <li><a href="#sobre"><span class="nav-label">Sobre</span><span class="nav-pg">01</span></a></li>
+        <li><a href="#participe"><span class="nav-label">Participe</span><span class="nav-pg">02</span></a></li>
+        <li><a href="#quem-somos"><span class="nav-label">Quem somos</span><span class="nav-pg">03</span></a></li>
+        <li><a href="#edicoes"><span class="nav-label">Edições</span><span class="nav-pg">04</span></a></li>
+        <li><a href="#divulgue"><span class="nav-label">Divulgue</span><span class="nav-pg">05</span></a></li>
+        <li><a href="#apoiadores"><span class="nav-label">Apoio</span><span class="nav-pg">06</span></a></li>
       </ul>
-      <button class="hamburger" aria-label="Menu">
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
         <span></span>
         <span></span>
@@ -48,74 +55,86 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu">
-    <a href="#sobre">Sobre</a>
-    <a href="#participe">Participe</a>
-    <a href="#divulgue">Divulgue</a>
-    <a href="#edicoes">Edições anteriores</a>
-    <a href="#apoiadores">Apoiadores</a>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#sobre"><span>Sobre</span><span class="mm-pg">01</span></a>
+    <a href="#participe"><span>Participe</span><span class="mm-pg">02</span></a>
+    <a href="#quem-somos"><span>Quem somos</span><span class="mm-pg">03</span></a>
+    <a href="#edicoes"><span>Edições</span><span class="mm-pg">04</span></a>
+    <a href="#divulgue"><span>Divulgue</span><span class="mm-pg">05</span></a>
+    <a href="#apoiadores"><span>Apoio</span><span class="mm-pg">06</span></a>
   </div>
 
-  <!-- ════ HERO ════ -->
-  <section class="hero">
-    <div class="hero-blob hero-blob-1"></div>
-    <div class="hero-blob hero-blob-2"></div>
-    <div class="hero-blob hero-blob-3"></div>
-
-    <div class="container hero-content">
-      <span class="label reveal">Lançamento 1º de junho &middot; Service Design Day</span>
-      <h1 class="reveal reveal-delay-1">Design de Serviço<br>no Brasil</h1>
-      <p class="reveal reveal-delay-2">Um grupo independente de designers, com o apoio da SDN Brasil, está conduzindo um estudo inédito para mapear o estado atual da disciplina de Design de Serviço no país. Participe e ajude a construir esse retrato.</p>
-      <div class="hero-cta-group reveal reveal-delay-3">
-        <a href="https://form.typeform.com/to/qH5MLd8m" target="_blank" rel="noopener" class="btn btn-primary">
-          Participe da Pesquisa
-          <span class="arrow">&rarr;</span>
-        </a>
-        <a href="#sobre" class="btn btn-outline">Saiba mais</a>
+  <!-- ════ HERO · CAPA ════ -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-main">
+        <p class="masthead reveal">Pesquisa Nacional &middot; Design de Serviço &middot; Brasil <span class="masthead-ed">/ Ed. 2026</span></p>
+        <span class="label reveal reveal-delay-1">Aberta até 1º de julho &middot; Service Design Day</span>
+        <h1 class="reveal reveal-delay-1">Design de Serviço<br>no Brasil</h1>
+        <p class="hero-intro reveal reveal-delay-2">Um grupo independente de designers, com o apoio da SDN Brasil, está conduzindo um estudo inédito para mapear o estado atual da disciplina de Design de Serviço no país. Participe e ajude a construir esse retrato.</p>
+        <div class="hero-cta-group reveal reveal-delay-3">
+          <a href="https://form.typeform.com/to/qH5MLd8m" target="_blank" rel="noopener" class="btn btn-primary">
+            Participe da Pesquisa
+            <span class="arrow">&rarr;</span>
+          </a>
+          <a href="#sobre" class="btn btn-link">Saiba mais <span class="arrow-down">&darr;</span></a>
+        </div>
       </div>
+      <aside class="hero-colophon reveal reveal-delay-2" aria-hidden="true">
+        <span class="colophon-line">Estudo inédito</span>
+        <span class="colophon-line">Grupo independente de designers</span>
+        <span class="colophon-line">Apoio técnico e financeiro<br>SDN Brasil</span>
+        <span class="colophon-line colophon-window">Coleta<br>01 jun &rarr; 01 jul &middot; 2026</span>
+      </aside>
     </div>
-
-    <div class="hero-scroll-hint">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    <div class="hero-foot">
+      <span class="hero-scroll-hint">role para folhear &darr;</span>
     </div>
-  </section>
+  </header>
 
-  <!-- ════ SOBRE ═ O QUE É ════ -->
+  <main id="conteudo">
+
+  <!-- ════ 01 · SOBRE — O QUE É ════ -->
   <section id="sobre" class="section">
     <div class="container">
+      <div class="folio reveal" data-folio="01">
+        <span class="folio-tag">01</span>
+        <span class="folio-name">O que é</span>
+        <span class="folio-rule"></span>
+      </div>
+      <h2 class="sr-only">O que é a pesquisa</h2>
+
       <div class="about-grid">
         <div class="about-text">
-          <span class="label reveal">Sobre a pesquisa</span>
-          <h2 class="reveal">O que é</h2>
-          <p class="reveal">O mercado brasileiro de design amadureceu muito nos últimos anos, mas ainda tomamos decisões com base em dados de pesquisas internacionais. Este estudo nasce para dar visibilidade à nossa realidade — real e complexa.</p>
+          <p class="dropcap reveal">O mercado brasileiro de design amadureceu muito nos últimos anos, mas ainda tomamos decisões com base em dados de pesquisas internacionais. Este estudo nasce para dar visibilidade à nossa realidade — real e complexa.</p>
           <p class="reveal">O mapeamento busca preencher uma lacuna histórica de dados sobre a profissão no Brasil, revelando o perfil dos profissionais, o nível de maturidade das empresas, as metodologias mais utilizadas e os principais desafios de carreira e contratação no mercado nacional.</p>
         </div>
         <div class="pillar-list">
           <div class="pillar reveal">
-            <div class="pillar-num">1</div>
+            <div class="pillar-num">01</div>
             <div class="pillar-content">
-              <h4>Mapeamento estrutural</h4>
+              <h3>Mapeamento estrutural</h3>
               <p>Perfil profissional, senioridade, especialidade, contratação e estrutura de times.</p>
             </div>
           </div>
           <div class="pillar reveal reveal-delay-1">
-            <div class="pillar-num">2</div>
+            <div class="pillar-num">02</div>
             <div class="pillar-content">
-              <h4>Relações entre especialidades</h4>
+              <h3>Relações entre especialidades</h3>
               <p>Análise comparativa em definição, discovery e delivery entre disciplinas.</p>
             </div>
           </div>
           <div class="pillar reveal reveal-delay-2">
-            <div class="pillar-num">3</div>
+            <div class="pillar-num">03</div>
             <div class="pillar-content">
-              <h4>Entendimento de Design de Serviço</h4>
+              <h3>Entendimento de Design de Serviço</h3>
               <p>Conceitos, reconhecimento, valorização, entregáveis e desafios.</p>
             </div>
           </div>
           <div class="pillar reveal reveal-delay-3">
-            <div class="pillar-num">4</div>
+            <div class="pillar-num">04</div>
             <div class="pillar-content">
-              <h4>Maturidade organizacional</h4>
+              <h3>Maturidade organizacional</h3>
               <p>Integração, posicionamento, relevância e expectativas nas empresas.</p>
             </div>
           </div>
@@ -124,293 +143,335 @@
     </div>
   </section>
 
-  <!-- ════ QUEM SOMOS ════ -->
-  <section class="section section-alt">
+  <!-- ════ 02 · COMO PARTICIPAR — A PESQUISA (color insert) ════ -->
+  <section id="participe" class="section section-plate">
     <div class="container">
-      <span class="label reveal">Quem somos</span>
-      <h2 class="reveal">O time por trás<br>da pesquisa</h2>
-      <p class="lead reveal">Um grupo independente de designers, com o apoio técnico e financeiro da SDN Brasil (Service Design Network), dedicado a gerar dados estruturados sobre o cenário do Design de Serviço no Brasil.</p>
-
-      <div class="team-members">
-        <a href="https://www.linkedin.com/in/marina-ricardo-design" target="_blank" rel="noopener" class="team-lead reveal">
-          <img src="assets/images/marina-ricardo.jpg" alt="Marina Ricardo" class="avatar avatar-photo">
-          <div class="team-lead-info">
-            <h4>Marina Ricardo</h4>
-            <span>Líder &middot; Especialista em Design de Serviço, Estratégia e Design Organizacional</span>
-            <p style="font-size:13px;color:var(--sand-500);margin-top:8px;line-height:1.6;">Mais de 12 anos de experiência em projetos complexos com foco em soluções centradas no usuário. Lançou o relatório Design de Serviço no Brasil em 2024, apresentado no Service Design Day em São Paulo e no SD Drinks em Berlim.</p>
-            <span style="display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--emerald-600);margin-top:4px;">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              LinkedIn
-            </span>
-          </div>
-        </a>
-
-        <a href="https://www.linkedin.com/in/marianafonsecadesouza" target="_blank" rel="noopener" class="team-lead reveal">
-          <img src="assets/images/mariana-fonseca.jpg" alt="Mariana Fonseca de Souza" class="avatar avatar-photo">
-          <div class="team-lead-info">
-            <h4>Mariana Fonseca de Souza</h4>
-            <span>Estrategista de Produtos e Serviços Phygital</span>
-            <p style="font-size:13px;color:var(--sand-500);margin-top:8px;line-height:1.6;">Mestre em Design de Processos (UFPR), 15 anos em Design de Produto e Gestão de Design. Operacionalizou times de Service Design na Electrolux, Stefanini, EDP e Alelo. Fundadora da Innovation By People.</p>
-            <span style="display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--emerald-600);margin-top:4px;">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              LinkedIn
-            </span>
-          </div>
-        </a>
-
-        <a href="https://www.linkedin.com/in/luiz-eduardo-camara/" target="_blank" rel="noopener" class="team-lead reveal">
-          <img src="assets/images/luiz-eduardo.jpg" alt="Luiz Eduardo" class="avatar avatar-photo">
-          <div class="team-lead-info">
-            <h4>Luiz Eduardo</h4>
-            <span>Design Lead &middot; Service Design e Design Estratégico</span>
-            <p style="font-size:13px;color:var(--sand-500);margin-top:8px;line-height:1.6;">Mestre em Design Strategy and Innovation pela Brunel University London. +10 anos no mercado de design digital, com passagens por BRQ, Try e longa carreira no Itaú, onde ajudou a fundar a Guilda de Service Design.</p>
-            <span style="display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--emerald-600);margin-top:4px;">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              LinkedIn
-            </span>
-          </div>
-        </a>
-
-        <a href="https://www.linkedin.com/in/julianabach/" target="_blank" rel="noopener" class="team-lead reveal">
-          <img src="assets/images/juliana-bach.jpg" alt="Juliana Bach" class="avatar avatar-photo">
-          <div class="team-lead-info">
-            <h4>Juliana Bach</h4>
-            <span>Design Lead &middot; Estratégia, Service Design e Transformação Digital</span>
-            <p style="font-size:13px;color:var(--sand-500);margin-top:8px;line-height:1.6;">24 anos como designer, 13 liderando equipes multidisciplinares em projetos de Estratégia, BD &amp; SD, CX e Transformação Digital. Uma das pioneiras no estudo de Design Thinking/Serviços e sua relação com liderança e estratégia no Brasil. Voz ativa na Rede MADI — Mulheres Atuando em Design e Inovação, e co-fundadora do seu podcast. Atuou em projetos no Brasil, México, Chile e Europa, pela Designit, Echos, Escola Design Thinking, everis, Chazz, GM Financial, Sicredi e NTTData.</p>
-            <span style="display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--emerald-600);margin-top:4px;">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              LinkedIn
-            </span>
-          </div>
-        </a>
+      <div class="folio folio-invert reveal" data-folio="02">
+        <span class="folio-tag">02</span>
+        <span class="folio-name">A pesquisa</span>
+        <span class="folio-rule"></span>
       </div>
-    </div>
-  </section>
 
-  <!-- ════ EQUIPE VOLUNTÁRIA ════ -->
-  <section class="section">
-    <div class="container">
-      <span class="label reveal">Equipe</span>
-      <h2 class="reveal">Voluntários</h2>
-      <p class="lead reveal">Pessoas que dedicam seu tempo para fazer esta pesquisa acontecer.</p>
-
-      <div class="team-grid">
-        <!-- TEMPLATE DE VOLUNTÁRIO — duplique este bloco para cada voluntário (foto, nome, cargo, função e LinkedIn na foto):
-        <article class="volunteer-card reveal">
-          <a href="LINK_DO_LINKEDIN" target="_blank" rel="noopener" class="volunteer-photo">
-            <img src="assets/images/volunteers/ARQUIVO.jpg" alt="NOME">
-            <span class="volunteer-linkedin" aria-label="LinkedIn">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </span>
-          </a>
-          <div class="volunteer-name">NOME</div>
-          <div class="volunteer-role">CARGO</div>
-          <div class="volunteer-function">FUNÇÃO NO PROJETO</div>
-        </article>
-        -->
-        <a href="#seja-voluntario" class="team-card team-card-cta reveal">
-          <div class="plus">+</div>
-          <div class="team-card-name" style="color: var(--emerald-600);">Seja voluntário</div>
-          <div class="team-card-role">Junte-se ao time</div>
-        </a>
+      <div class="participe-head">
+        <h2 class="reveal">Responder leva<br>cerca de 15 minutos</h2>
+        <p class="lead reveal reveal-delay-1">Sua participação constrói o primeiro retrato nacional do Design de Serviço. As respostas são anônimas — e a coleta está aberta até <strong>1º de julho de 2026</strong>.</p>
       </div>
-    </div>
-  </section>
 
-  <!-- ════ SEJA UM VOLUNTÁRIO ════ -->
-  <section id="seja-voluntario" class="section section-alt">
-    <div class="container">
-      <span class="label reveal">Participe</span>
-      <h2 class="reveal">Seja um voluntário</h2>
-      <p class="lead reveal">Quer ajudar a construir o retrato do Design de Serviço no Brasil? Preencha o formulário e entraremos em contato.</p>
+      <div class="participe-body">
+        <ol class="steps-grid reveal reveal-delay-1">
+          <li class="step">
+            <span class="step-num">01</span>
+            <span class="step-title">Acesse o questionário</span>
+            <span class="step-text">Abra a pesquisa no Typeform pelo botão ou pelo QR Code.</span>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <span class="step-title">Responda</span>
+            <span class="step-text">Cerca de 15 minutos. Suas respostas são anônimas.</span>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <span class="step-title">Compartilhe</span>
+            <span class="step-text">Envie para colegas e redes. Quanto mais respostas, melhor o retrato.</span>
+          </li>
+        </ol>
 
-      <div class="volunteer-form-wrap reveal">
-        <form id="volunteer-form" class="volunteer-form">
-          <div class="form-field">
-            <label for="vf-nome">Nome</label>
-            <input type="text" id="vf-nome" name="nome" required autocomplete="name">
-          </div>
-          <div class="form-field">
-            <label for="vf-email">Email</label>
-            <input type="email" id="vf-email" name="email" required autocomplete="email">
-          </div>
-          <div class="form-field">
-            <label for="vf-linkedin">LinkedIn</label>
-            <input type="url" id="vf-linkedin" name="linkedin" placeholder="https://linkedin.com/in/..." autocomplete="url">
-          </div>
-          <div class="form-field">
-            <label for="vf-ajuda">O que posso fazer para ajudar?</label>
-            <textarea id="vf-ajuda" name="ajuda" required></textarea>
-          </div>
-          <div class="form-field">
-            <label for="vf-motivo">Por que quer ser um voluntário?</label>
-            <textarea id="vf-motivo" name="motivo" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">
-            Enviar e aguardar contato
+        <div class="participe-action reveal reveal-delay-2">
+          <a href="https://form.typeform.com/to/qH5MLd8m" target="_blank" rel="noopener" class="btn btn-cream">
+            Responder Pesquisa
             <span class="arrow">&rarr;</span>
-          </button>
-        </form>
-        <p class="form-note">Após o envio, nossa equipe entrará em contato pelo e-mail informado.</p>
+          </a>
+          <figure class="qr-plate">
+            <a href="https://form.typeform.com/to/qH5MLd8m" target="_blank" rel="noopener" class="qr-card" aria-label="Acessar a pesquisa pelo QR Code">
+              <img src="assets/images/brand/qr-pesquisa.png" alt="QR Code para acessar a pesquisa">
+            </a>
+            <figcaption>FIG. — aponte a câmera</figcaption>
+          </figure>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ════ COMO PARTICIPAR ════ -->
-  <section id="participe" class="section section-green">
-    <div class="container" style="text-align:center;">
-      <span class="label reveal" style="color: rgba(255,255,255,0.7);">Como participar</span>
-      <h2 class="reveal">Três passos simples</h2>
-      <p class="lead reveal" style="margin-left:auto;margin-right:auto;color:rgba(255,255,255,0.8);">Responda ao questionário e ajude a construir o retrato do Design de Serviço no Brasil em 2026.</p>
-
-      <div class="steps-grid">
-        <div class="step reveal">
-          <div class="step-num">01</div>
-          <div class="step-title">Acesse o questionário</div>
-          <div class="step-text">Clique no botão abaixo para abrir a pesquisa no Typeform.</div>
-        </div>
-        <div class="step reveal reveal-delay-1">
-          <div class="step-num">02</div>
-          <div class="step-title">Responda</div>
-          <div class="step-text">Leva cerca de 15 minutos. Suas respostas são anônimas.</div>
-        </div>
-        <div class="step reveal reveal-delay-2">
-          <div class="step-num">03</div>
-          <div class="step-title">Compartilhe</div>
-          <div class="step-text">Envie para colegas e redes. Quanto mais respostas, melhor o retrato.</div>
-        </div>
-      </div>
-
-      <a href="https://form.typeform.com/to/qH5MLd8m" target="_blank" rel="noopener" class="btn btn-white reveal">
-        Responder Pesquisa
-        <span class="arrow">&rarr;</span>
-      </a>
-
-      <div class="qr-block reveal">
-        <a href="https://form.typeform.com/to/qH5MLd8m" target="_blank" rel="noopener" class="qr-card" aria-label="Acessar a pesquisa pelo QR Code">
-          <img src="assets/images/brand/qr-pesquisa.png" alt="QR Code para acessar a pesquisa">
-        </a>
-        <p class="qr-hint">Ou aponte a câmera do celular para o QR Code</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════ DIVULGUE ════ -->
-  <section id="divulgue" class="section">
+  <!-- ════ 03 · QUEM SOMOS — OS PESQUISADORES ════ -->
+  <section id="quem-somos" class="section section-alt">
     <div class="container">
-      <span class="label reveal">Divulgue</span>
-      <h2 class="reveal">Ajude a pesquisa<br>a chegar mais longe</h2>
-      <p class="lead reveal">Compartilhe nas redes sociais e ajude a pesquisa a alcançar mais profissionais. Use os textos prontos abaixo como inspiração.</p>
+      <div class="folio reveal" data-folio="03">
+        <span class="folio-tag">03</span>
+        <span class="folio-name">Os pesquisadores</span>
+        <span class="folio-rule"></span>
+      </div>
+
+      <div class="register-head">
+        <h2 class="reveal">O time por trás<br>da pesquisa</h2>
+        <p class="lead reveal reveal-delay-1">Um grupo independente de designers, com o apoio técnico e financeiro da SDN Brasil (Service Design Network), dedicado a gerar dados estruturados sobre o cenário do Design de Serviço no Brasil.</p>
+      </div>
+
+      <div class="register">
+        <a href="https://www.linkedin.com/in/marina-ricardo-design" target="_blank" rel="noopener" class="entry reveal">
+          <img src="assets/images/marina-ricardo.jpg" alt="Marina Ricardo" class="entry-photo">
+          <div class="entry-body">
+            <h3>Marina Ricardo</h3>
+            <span class="entry-role"><span class="role-lead">Líder</span> &middot; Especialista em Design de Serviço, Estratégia e Design Organizacional</span>
+            <p class="entry-bio">Mais de 12 anos de experiência em projetos complexos com foco em soluções centradas no usuário. Lançou o relatório Design de Serviço no Brasil em 2024, apresentado no Service Design Day em São Paulo e no SD Drinks em Berlim.</p>
+            <span class="entry-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </span>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/marianafonsecadesouza" target="_blank" rel="noopener" class="entry reveal">
+          <img src="assets/images/mariana-fonseca.jpg" alt="Mariana Fonseca de Souza" class="entry-photo">
+          <div class="entry-body">
+            <h3>Mariana Fonseca de Souza</h3>
+            <span class="entry-role">Estrategista de Produtos e Serviços Phygital</span>
+            <p class="entry-bio">Mestre em Design de Processos (UFPR), 15 anos em Design de Produto e Gestão de Design. Operacionalizou times de Service Design na Electrolux, Stefanini, EDP e Alelo. Fundadora da Innovation By People.</p>
+            <span class="entry-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </span>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/luiz-eduardo-camara/" target="_blank" rel="noopener" class="entry reveal">
+          <img src="assets/images/luiz-eduardo.jpg" alt="Luiz Eduardo" class="entry-photo">
+          <div class="entry-body">
+            <h3>Luiz Eduardo</h3>
+            <span class="entry-role">Design Lead &middot; Service Design e Design Estratégico</span>
+            <p class="entry-bio">Mestre em Design Strategy and Innovation pela Brunel University London. +10 anos no mercado de design digital, com passagens por BRQ, Try e longa carreira no Itaú, onde ajudou a fundar a Guilda de Service Design.</p>
+            <span class="entry-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </span>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/in/julianabach/" target="_blank" rel="noopener" class="entry reveal">
+          <img src="assets/images/juliana-bach.jpg" alt="Juliana Bach" class="entry-photo">
+          <div class="entry-body">
+            <h3>Juliana Bach</h3>
+            <span class="entry-role">Design Lead &middot; Estratégia, Service Design e Transformação Digital</span>
+            <p class="entry-bio">24 anos como designer, 13 liderando equipes multidisciplinares em projetos de Estratégia, BD &amp; SD, CX e Transformação Digital. Uma das pioneiras no estudo de Design Thinking/Serviços e sua relação com liderança e estratégia no Brasil. Voz ativa na Rede MADI — Mulheres Atuando em Design e Inovação, e co-fundadora do seu podcast. Atuou em projetos no Brasil, México, Chile e Europa, pela Designit, Echos, Escola Design Thinking, everis, Chazz, GM Financial, Sicredi e NTTData.</p>
+            <span class="entry-link">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ 04 · EDIÇÕES ════ -->
+  <section id="edicoes" class="section">
+    <div class="container">
+      <div class="folio reveal" data-folio="04">
+        <span class="folio-tag">04</span>
+        <span class="folio-name">Edições</span>
+        <span class="folio-rule"></span>
+      </div>
+
+      <div class="edicoes-head">
+        <h2 class="reveal">A pesquisa<br>ao longo do tempo</h2>
+        <p class="lead reveal reveal-delay-1">Acompanhe a evolução do retrato do Design de Serviço no Brasil.</p>
+      </div>
+
+      <ol class="ledger reveal reveal-delay-1">
+        <li class="ledger-row">
+          <span class="ledger-dot ledger-dot-past" aria-hidden="true"></span>
+          <span class="ledger-year">2024</span>
+          <div class="ledger-body">
+            <span class="ledger-badge ledger-badge-past">Encerrada &middot; 2024</span>
+            <h3>Primeira edição</h3>
+            <p>A edição inaugural que começou a mapear o cenário do Design de Serviço no Brasil, apresentada no Service Design Day em São Paulo e no SD Drinks em Berlim.</p>
+          </div>
+        </li>
+        <li class="ledger-axis" aria-hidden="true"><span class="ledger-axis-line"></span></li>
+        <li class="ledger-row ledger-row-current">
+          <span class="ledger-dot ledger-dot-live" aria-hidden="true"></span>
+          <span class="ledger-year">2026</span>
+          <div class="ledger-body">
+            <span class="ledger-badge">Aberta &middot; até 1º jul</span>
+            <h3>Edição atual</h3>
+            <p>Lançada online e gratuita durante o Service Design Day, com apoio da SDN Brasil. Novas camadas de análise, maior alcance nacional e coleta aberta até 1º de julho de 2026.</p>
+            <a href="https://form.typeform.com/to/qH5MLd8m" target="_blank" rel="noopener" class="ledger-link">
+              Participar agora
+              <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ════ 05 · DIVULGUE ════ -->
+  <section id="divulgue" class="section section-alt">
+    <div class="container">
+      <div class="folio reveal" data-folio="05">
+        <span class="folio-tag">05</span>
+        <span class="folio-name">Divulgue</span>
+        <span class="folio-rule"></span>
+      </div>
+
+      <div class="divulgue-head">
+        <h2 class="reveal">Ajude a pesquisa<br>a chegar mais longe</h2>
+        <p class="lead reveal reveal-delay-1">Compartilhe nas redes e ajude a pesquisa a alcançar mais profissionais. Use os textos prontos abaixo — clique para copiar.</p>
+      </div>
 
       <div class="share-grid">
-        <div class="share-card reveal" onclick="copyText(this)" data-copy="Como está o mercado de Design de Serviço no Brasil hoje? Se você trabalha na área, sabe que sempre precisamos recorrer a dados gringos para justificar o valor do nosso trabalho por aqui. Mas esse cenário mudou.
+        <div class="share-card reveal" role="button" tabindex="0" aria-label="Copiar texto de divulgação para LinkedIn" onclick="copyText(this)" data-copy="Como está o mercado de Design de Serviço no Brasil hoje? Se você trabalha na área, sabe que sempre precisamos recorrer a dados gringos para justificar o valor do nosso trabalho por aqui. Mas esse cenário mudou.
 
 Um estudo inédito, realizado por um grupo de designers com o apoio da SDN Brasil, está mapeando a maturidade da nossa disciplina no país: desafios de carreira, salários, metodologias e barreiras corporativas.
 
-O lançamento oficial acontece no dia 1º de junho, online, durante o Service Design Day.
+O lançamento oficial acontece no dia 1º de junho, online, durante o Service Design Day, com data fim em 1º de julho.
 
 Quer participar? Acesse: pesquisadesigndeservico.com.br
 
 #DesignDeServico #ServiceDesign #UXDesign #Inovacao #SDNBrasil #DesignEstrategico">
-          <div class="share-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span class="fig-label">FIG. 1</span>
+          <div class="share-channel">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <h3>LinkedIn</h3>
           </div>
-          <h4>LinkedIn</h4>
-          <p>Texto pronto para postar — clique para copiar</p>
+          <p aria-live="polite">Texto pronto para postar — clique para copiar</p>
         </div>
-        <div class="share-card reveal reveal-delay-1" onclick="copyText(this)" data-copy="O Design de Serviço no Brasil finalmente ganhará um raio-x para chamar de seu! 🇧🇷
+        <div class="share-card reveal reveal-delay-1" role="button" tabindex="0" aria-label="Copiar legenda de divulgação para Instagram" onclick="copyText(this)" data-copy="O Design de Serviço no Brasil finalmente ganhará um raio-x para chamar de seu! 🇧🇷
 
 Um time de designers de peso, com o apoio da @sdnbrasil, está rodando um estudo inédito para entender de verdade o estado atual da nossa profissão por aqui.
 
 O resultado? Um relatório completo sobre maturidade de mercado, desafios de carreira e tendências.
 
-O grande lançamento rola no dia 1º de junho, no evento oficial do Service Design Day.
+O grande lançamento rola no dia 1º de junho, no evento oficial do Service Design Day, com data fim em 1º de julho.
 
-Participe: link na bio!
+Participe: pesquisadesigndeservico.com.br
 
 #ServiceDesign #DesignDeServico #MercadoDeDesign #SDN #UX">
-          <div class="share-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
+          <span class="fig-label">FIG. 2</span>
+          <div class="share-channel">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
+            <h3>Instagram</h3>
           </div>
-          <h4>Instagram</h4>
-          <p>Legenda pronta para o feed — clique para copiar</p>
+          <p aria-live="polite">Legenda pronta para o feed — clique para copiar</p>
         </div>
-        <div class="share-card reveal reveal-delay-2" onclick="copyLink()">
-          <div class="share-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        <div class="share-card reveal reveal-delay-2" role="button" tabindex="0" aria-label="Copiar o link direto da pesquisa" onclick="copyLink()">
+          <span class="fig-label">FIG. 3</span>
+          <div class="share-channel">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            <h3>Link direto</h3>
           </div>
-          <h4>Link direto</h4>
-          <p>Copie o link da pesquisa para compartilhar</p>
+          <p aria-live="polite">Copie o link da pesquisa para compartilhar</p>
         </div>
       </div>
 
-      <div class="share-materials reveal" style="margin-top:40px;">
-        <p class="share-materials-hint">Use as artes oficiais nas suas redes:</p>
+      <div class="share-materials reveal">
+        <p class="share-materials-hint">Use as artes oficiais nas suas redes</p>
         <div class="materials-grid">
-          <a href="assets/images/brand/post-divulgacao.png" target="_blank" rel="noopener"><img src="assets/images/brand/post-divulgacao.png" alt="O Design no Brasil precisa da sua voz — arte de divulgação"></a>
-          <a href="assets/images/brand/post-a.png" target="_blank" rel="noopener"><img src="assets/images/brand/post-a.png" alt="Arte de divulgação — Post A"></a>
-          <a href="assets/images/brand/post-b.png" target="_blank" rel="noopener"><img src="assets/images/brand/post-b.png" alt="Arte de divulgação — Post B"></a>
+          <a href="assets/images/brand/post-divulgacao.png" target="_blank" rel="noopener" class="plate"><img src="assets/images/brand/post-divulgacao.png" alt="O Design no Brasil precisa da sua voz — arte de divulgação"><span class="plate-cap">PL. 1 — Divulgação</span></a>
+          <a href="assets/images/brand/post-a.png" target="_blank" rel="noopener" class="plate"><img src="assets/images/brand/post-a.png" alt="Arte de divulgação — Post A"><span class="plate-cap">PL. 2 — Post A</span></a>
+          <a href="assets/images/brand/post-b.png" target="_blank" rel="noopener" class="plate"><img src="assets/images/brand/post-b.png" alt="Arte de divulgação — Post B"><span class="plate-cap">PL. 3 — Post B</span></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ════ EDIÇÕES ANTERIORES ════ -->
-  <section id="edicoes" class="section section-alt">
-    <div class="container">
-      <span class="label reveal">Histórico</span>
-      <h2 class="reveal">Edições da pesquisa</h2>
-      <p class="lead reveal">Acompanhe a evolução do retrato do Design de Serviço no Brasil ao longo dos anos.</p>
-
-      <div class="editions-grid">
-        <div class="edition-card reveal">
-          <div class="edition-year">2024</div>
-          <h4>Primeira edição</h4>
-          <p>A edição inaugural que começou a mapear o cenário do Design de Serviço no Brasil, apresentada no Service Design Day em São Paulo e no SD Drinks em Berlim.</p>
-          <a href="#" class="edition-link">
-            Ver resultados
-            <span>&rarr;</span>
-          </a>
-        </div>
-        <div class="edition-card current reveal reveal-delay-1">
-          <span class="edition-badge">Lançamento 1º de junho</span>
-          <div class="edition-year">2026</div>
-          <h4>Edição atual</h4>
-          <p>Lançamento online e gratuito durante o Service Design Day, com apoio da SDN Brasil. Novas camadas de análise e maior alcance nacional.</p>
-          <a href="https://form.typeform.com/to/qH5MLd8m" target="_blank" rel="noopener" class="edition-link">
-            Participar agora
-            <span>&rarr;</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ════ APOIADORES ════ -->
+  <!-- ════ 06 · APOIADORES ════ -->
   <section id="apoiadores" class="section">
-    <div class="container" style="text-align:center;">
-      <span class="label reveal">Apoio</span>
-      <h2 class="reveal">Apoiadores</h2>
-      <p class="lead reveal" style="margin-left:auto;margin-right:auto;">Organizações que apoiam e acreditam na importância desta pesquisa.</p>
+    <div class="container">
+      <div class="folio reveal" data-folio="06">
+        <span class="folio-tag">06</span>
+        <span class="folio-name">Apoio institucional</span>
+        <span class="folio-rule"></span>
+      </div>
+      <h2 class="sr-only">Apoio institucional</h2>
 
-      <div class="supporters-grid">
-        <a href="https://www.instagram.com/sdnbrazil" target="_blank" rel="noopener" class="supporter-card reveal">
-          <div class="supporter-logo">SDN</div>
-          <div>
-            <h4>SDN Brazil</h4>
-            <span>Service Design Network</span>
-          </div>
+      <div class="colophon-credit reveal">
+        <p class="lead">Organizações que apoiam e acreditam na importância desta pesquisa.</p>
+        <a href="https://www.instagram.com/sdnbrazil" target="_blank" rel="noopener" class="credit-entry">
+          <span class="credit-mark">SDN</span>
+          <span class="credit-body">
+            <span class="credit-name">SDN Brazil <span class="credit-sub">— Service Design Network</span></span>
+            <span class="credit-role">Apoio técnico e financeiro</span>
+          </span>
+          <span class="arrow">&rarr;</span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ════ BANNER DE MARCA ════ -->
-  <section class="brand-banner reveal">
-    <img src="assets/images/brand/banner.png" alt="Pesquisa Nacional de Design de Serviço">
+  <!-- ════ 07 · SOME-SE — VOLUNTÁRIOS / FORMULÁRIO (bottom) ════ -->
+  <section id="seja-voluntario" class="section section-alt">
+    <div class="container">
+      <div class="folio reveal" data-folio="07">
+        <span class="folio-tag">07</span>
+        <span class="folio-name">Some-se ao time</span>
+        <span class="folio-rule"></span>
+      </div>
+
+      <div class="join-grid">
+        <div class="join-text reveal">
+          <h2>Seja um voluntário</h2>
+          <p class="lead">Quer ajudar a construir o retrato do Design de Serviço no Brasil? Pessoas que dedicam seu tempo fazem esta pesquisa acontecer. Preencha o formulário e entraremos em contato.</p>
+          <!-- TEMPLATE DE VOLUNTÁRIO — duplique este bloco para cada voluntário (foto, nome, cargo, função e LinkedIn na foto):
+          <article class="volunteer-card reveal">
+            <a href="LINK_DO_LINKEDIN" target="_blank" rel="noopener" class="volunteer-photo">
+              <img src="assets/images/volunteers/ARQUIVO.jpg" alt="NOME">
+              <span class="volunteer-linkedin" aria-label="LinkedIn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </span>
+            </a>
+            <div class="volunteer-name">NOME</div>
+            <div class="volunteer-role">CARGO</div>
+            <div class="volunteer-function">FUNÇÃO NO PROJETO</div>
+          </article>
+          -->
+        </div>
+
+        <div class="volunteer-form-wrap reveal reveal-delay-1">
+          <form id="volunteer-form" class="volunteer-form">
+            <div class="form-field">
+              <label for="vf-nome">Nome</label>
+              <input type="text" id="vf-nome" name="nome" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="vf-email">Email</label>
+              <input type="email" id="vf-email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="vf-linkedin">LinkedIn</label>
+              <input type="url" id="vf-linkedin" name="linkedin" placeholder="https://linkedin.com/in/..." autocomplete="url">
+            </div>
+            <div class="form-field">
+              <label for="vf-ajuda">O que posso fazer para ajudar?</label>
+              <textarea id="vf-ajuda" name="ajuda" required></textarea>
+            </div>
+            <div class="form-field">
+              <label for="vf-motivo">Por que quer ser um voluntário?</label>
+              <textarea id="vf-motivo" name="motivo" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Enviar e aguardar contato
+              <span class="arrow">&rarr;</span>
+            </button>
+          </form>
+          <p class="form-note">Após o envio, nossa equipe entrará em contato pelo e-mail informado.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- ════ FOOTER ════ -->
+  </main>
+
+  <!-- ════ BANNER DE MARCA — PLATE ════ -->
+  <section class="brand-banner reveal">
+    <div class="container">
+      <figure class="banner-plate">
+        <img src="assets/images/brand/banner.png" alt="Pesquisa Nacional de Design de Serviço">
+        <figcaption>Pesquisa Nacional de Design de Serviço — 2026</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ════ FOOTER — COLOFÃO ════ -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
@@ -422,18 +483,15 @@ Participe: link na bio!
           <a href="mailto:contato@pesquisadesigndeservico.com.br" class="footer-email">contato@pesquisadesigndeservico.com.br</a>
         </div>
         <div class="footer-links">
-          <a href="https://www.instagram.com/sdnbrazil" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-            Instagram
-          </a>
           <a href="https://www.linkedin.com/company/pqndds" target="_blank" rel="noopener">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             LinkedIn
           </a>
         </div>
       </div>
       <div class="footer-bottom">
-        &copy; 2026 Pesquisa de Design de Serviço no Brasil. Todos os direitos reservados.
+        <span class="footer-mark">Fim —</span>
+        <span>&copy; 2026 Pesquisa de Design de Serviço no Brasil. Todos os direitos reservados.</span>
       </div>
     </div>
   </footer>
