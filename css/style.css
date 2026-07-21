@@ -1003,12 +1003,26 @@ strong { font-weight: 600; color: var(--ink-deep); }
   margin-top: 16px;
 }
 
-/* volunteer card template (kept for future entries) */
+/* volunteers — current team */
+.volunteers-hint {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--sand-600);
+  margin: clamp(32px, 5vw, 48px) 0 10px;
+}
+.volunteers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 clamp(14px, 2vw, 24px);
+}
 .volunteer-card { text-align: center; padding: 20px 0; border-top: 1px solid var(--rule); }
 .volunteer-photo { position: relative; display: block; width: 88px; height: 88px; margin: 0 auto 14px; }
 .volunteer-photo img { width: 88px; height: 88px; object-fit: cover; object-position: center top; filter: grayscale(1) sepia(.25) hue-rotate(300deg) saturate(1.3); }
 .volunteer-linkedin { position: absolute; right: -2px; bottom: -2px; width: 26px; height: 26px; background: var(--carmine); color: var(--paper); display: flex; align-items: center; justify-content: center; }
-.volunteer-name { font-family: var(--font-display); font-size: 18px; color: var(--ink-deep); }
+.volunteer-name { display: inline-block; font-family: var(--font-display); font-size: 18px; color: var(--ink-deep); text-decoration: none; transition: color .25s; }
+a.volunteer-name:hover { color: var(--carmine); }
 .volunteer-role { font-family: var(--font-mono); font-size: 11px; color: var(--carmine); margin-top: 4px; }
 .volunteer-function { font-size: 12px; color: var(--sand-600); margin-top: 4px; }
 
@@ -1153,6 +1167,7 @@ h1, h2, h3, h4, .entry-body h3, .ledger-year { overflow-wrap: break-word; }
   .hero-cta-group .btn { justify-content: center; }
   .btn-link { justify-content: center; }
   .volunteer-form .btn { justify-self: stretch; justify-content: center; }
+  .volunteers-grid { grid-template-columns: repeat(2, 1fr); }
   .entry { grid-template-columns: 1fr; }
   .entry-photo { width: 96px; }
 }
